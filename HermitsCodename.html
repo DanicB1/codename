@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./static/global.css">
+	<!-- <script src="./node_modules/socket.io-client/dist/socket.io.js"></script> -->
+	<script src="http://localhost:5000/socket.io/socket.io.js"></script>
+	<script src="./static/jquery.min.js"></script>
+	<title>Hermit's Codename</title>
+</head>
+
+<body class='vertical-flex center'>
+	<main class='vertical-flex space-evenly'>
+		<div id='menu' class='flex space-evenly'>
+			<div class='teams vertical-flex' id='red'>
+				<div class='player flex space-evenly'>
+					<input class='playerName' type="text" name="playerName" id="playerNameRED">
+					<input class='addToTeam' id='addToTeamRed' type="button" value="Add">
+				</div>
+				<table class='playerTable' id='tableRed'>
+					<thead>
+						<tr>
+							<th>Team Bebi</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+			<input id='playButton' type="button" value="GoGoGo!">
+			<div class='teams vertical-flex' id='blue'>
+				<div class='player flex space-evenly'>
+					<input class='playerName' type="text" name="playerName" id="playerNameBLUE">
+					<input class='addToTeam' id='addToTeamBlue' type="button" value="Add">
+				</div>
+				<table class='playerTable' id='tableBlue'>
+					<thead>
+						<tr>
+							<th>Team Fatilul</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+		</div>
+		<div id='roles'>
+			<input id='hawtie' class='roleButtons' type="button" value="Hawtie">
+			<input id='normie' class='roleButtons' type="button" value="Normie">
+		</div>
+	</main>
+</body>
+<script src="./static/game.js"></script>
+</html>

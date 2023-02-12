@@ -1,0 +1,162 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	background-color: black;
+	position: relative;
+
+	width: 100vw;
+	height: 100vh;
+}
+
+main {
+	width: 100vw;
+	height: 90vh;
+}
+
+#menu {
+	width: 90%;
+	height: 80%;
+
+	margin: auto;
+}
+
+.teams {
+	width: 20%;
+	height: 100%;
+	background-color: cadetblue;
+
+	margin: auto;
+}
+
+.vertical-flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex {
+	display: flex;
+}
+
+.space-evenly {
+	justify-content: space-evenly;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.absolute-center {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.center {
+	justify-content: center;
+}
+
+
+.player {
+	height: 8%;
+}
+
+.playerName, .addToTeam {
+	margin: 5px 0px;
+}
+
+.playerName {
+	width: 75%;
+	font-size: 1.5rem;
+}
+
+.addToTeam {
+	width: 20%;
+}
+
+
+.playerTable {
+	background-color: cornsilk;
+
+	width: 97%;
+	height: 50%;
+
+	margin: 0 auto;
+}
+
+.teamMember {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: black solid 2px;
+	border-top: black solid 2px;
+	padding: 2px 0;
+}
+
+#playButton {
+	height: 10%;
+	width: 10%;
+	margin: auto 0;
+}
+
+#gameGrid {
+	width: 90%;
+	height: 90%;
+	background-color: blanchedalmond;
+}
+
+.row {
+	height: 20%;
+}
+
+.card {
+	width: 15%;
+	height: 75%;
+	text-align: center;
+	margin: auto;
+	background-color: white;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+#roles {
+	margin: auto;
+}
+
+.red {
+	background-color: hotpink;
+}
+
+.blue {
+	background-color: lightskyblue;
+}
+
+.black {
+	background-color: lightslategray;
+}
+
+.redTeamCard {
+	background-image: url(./images/red.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.blueTeamCard {
+	background-image: url(./images/blue.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.beigeTeamCard {
+	background-image: url(./images/beige.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.blackTeamCard {
+	background-image: url(./images/black.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
